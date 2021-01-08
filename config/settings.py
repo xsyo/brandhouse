@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'claim.apps.ClaimConfig',
     'manager.apps.ManagerConfig',
     'client.apps.ClientConfig',
+    'task.apps.TaskConfig',
 
     # Сторонние приложения
     'rest_framework',

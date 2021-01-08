@@ -16,6 +16,12 @@ class Client(User):
         self.role = 'CL'
         super().save(*args, **kwargs)
 
+    def get_name(self):
+        return self.clientProfile.name
+    
+    def __str__(self):
+        return self.get_name()
+
     class Meta:
         proxy = True
         verbose_name = 'Клиенты'

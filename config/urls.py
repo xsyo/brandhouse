@@ -45,5 +45,6 @@ urlpatterns = [
     path('claim/', include('claim.urls')),
     path('manager/', include('manager.urls')),
     path('client/', include('client.urls')),
+    path('project/', include('task.urls')),
 
 ]

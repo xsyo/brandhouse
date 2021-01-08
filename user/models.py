@@ -13,5 +13,8 @@ class User(AbstractUser):
         ('DR', 'Designer'),
     )
 
+    def __str__(self):
+        return self.first_name
+
     role = models.CharField(max_length=2, choices=ROLE, default='MN', verbose_name='Роли')
 
